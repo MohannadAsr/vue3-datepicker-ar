@@ -32,16 +32,16 @@ const ar = (): ILocale => {
   const rtl = true;
   const ymd = false;
   const yearSuffix = '';
-  return {
+ return {
     months: monthFullName,
     monthsAbbr: shortName,
     days,
-    language: langName,
     yearSuffix,
     ymd,
     rtl,
+    language: langName,
     langName,
-    daysNames,
+    daysNames: days,
   };
 };
 
